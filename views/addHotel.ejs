@@ -1,0 +1,57 @@
+<section class="container py-5 bg-danger bg-opacity-25">
+    <h2 class="text-center text-primary">
+        Agregar Hotel
+    </h2>
+    <div class="row d-flex justify-content-center">
+        <form action="" class="w-50" method="post">
+            
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input class="form-control" type="text" name="nombre" id="nombre">  
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">email</label>
+                <input class="form-control" type="text" name="email" id="email">  
+              </div>
+              <div class="mb-3">
+                <label for="ubicacion" class="form-label">Ciudad</label>
+                <input class="form-control" type="text" name="ubicacion" id="ubicacion">  
+              </div>
+              <div class="mb-3">
+                <label for="info" class="form-label"></label>
+                <input class="form-control" type="text" name="info" id="info">  
+               
+              </div>
+              <div class="mb-3 form-check">
+                <input class="form-check-input" type="checkbox" name="cancha" id="cancha" value="Cancha de Tennis">
+                <label for="cancha" class="form-check-label">Cancha de Tennis</label>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input class="form-check-input" type="checkbox" name="playa" id="playa" value="Zona privada de playa">
+                <label for="playa" class="form-check-label">Zona privada de playa</label>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input class="form-check-input" type="checkbox" name="pileta" id="pileta" value="Pileta climatizada">
+                <label for="pileta" class="form-check-label">Pileta climatizada</label>
+            </div>
+            <div class="mb-3 form-check">
+                <input class="form-check-input" type="checkbox" name="wifi" id="wifi" value="Wifi gratis">
+                <label for="wifi" class="form-check-label">Wifi Gratis</label>
+            </div>
+            <div class="mb-3 form-check">
+                <input class="form-check-input" type="checkbox" name="spa" id="spa" value="Spa">
+                <label for="spa" class="form-check-label">Spa</label>
+            </div>
+            <div>
+                <input type="text"name="title"value="hotel" hidden>
+            </div>
+              <div class="mb-3">
+                <label for="" class="form-label"> File:</label>
+                <input class="mb-3 " type="file" name="archivo" multiple="multiple" />  
+              </div>
+              <button type="submit" class="btn btn-primary">Agregar</button>
+        </form>
+    </div>
+</section>

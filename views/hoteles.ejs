@@ -1,0 +1,31 @@
+<main>
+    <section>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-sm-md-3 g-3"> //para ser responsivo
+                <% for( let i = 0; i < data.length; i++ ) { %>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <p class="card-text"><%= data[i].name %> </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button class="btn btn-sm btn-success mx-1">
+                                        Modificar
+                                    </button>
+                                    <button class="btn btn-sm btn-danger mx-1">
+                                        Eliminar
+                                    </button>
+                               
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                <% } %>
+
+            </div>
+        </div>
+    </section>
+</main>
