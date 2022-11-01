@@ -6,3 +6,14 @@ body {
 a {
   color: #00B7FF;
 }
+
+img{
+  width: 275px;
+  height: 183px;
+  box-shadow: 5px 5px 9px black;
+}
+img:hover{
+  width: 275px;
+  height: 183px;
+  box-shadow: -5px -5px 9px black;
+}

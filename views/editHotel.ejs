@@ -1,25 +1,25 @@
 <section class="container py-5 bg-danger bg-opacity-25">
     <h2 class="text-center text-primary">
-        Agregar Hotel
+        Modificar Hotel
     </h2>
     <div class="row d-flex justify-content-center">
-        <form action="/hoteles/add" class="w-50" method="post" enctype="multipart/form-data">
-            
+        <form action="/hoteles/edit" class="w-50" method="post" >
+            <input type="text" id="id" name="id" value="<%= hotel.id %>" hidden>
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre</label>
-                <input class="form-control" type="text" name="nombre" id="nombre">  
+                <input class="form-control" type="text" name="nombre" id="nombre" value="<%= hotel.nombre %>">  
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">email</label>
-                <input class="form-control" type="text" name="email" id="email">  
+                <input class="form-control" type="text" name="email" id="email" value="<%= hotel.email %>">  
               </div>
               <div class="mb-3">
                 <label for="ubicacion" class="form-label">Ciudad</label>
-                <input class="form-control" type="text" name="ubicacion" id="ubicacion">  
+                <input class="form-control" type="text" name="ubicacion" id="ubicacion" value="<%= hotel.ubicacion %>">  
               </div>
               <div class="mb-3">
                 <label for="info" class="form-label">Informacion</label>
-                <input class="form-control" type="text" name="info" id="info">  
+                <input class="form-control" type="text" name="info" id="info" value="<%= hotel.info %>">  
                
               </div>
               <div class="mb-3 form-check">
@@ -44,14 +44,13 @@
                 <input class="form-check-input" type="checkbox" name="spa" id="spa" value="Spa">
                 <label for="spa" class="form-check-label">Spa</label>
             </div>
-            <div>
-                <input type="text"name="title"value="hotel" hidden>
-            </div>
-              <div class="mb-3">
-                <label for="" class="form-label"> File:</label>
-                <input class="mb-3 " type="file" name="archivo" multiple="multiple" />  
+            
+              <div class="mb-3" class="mb-3 form-check">
+                <img src="/images/<%= hotel.src %>" width="150px" alt="">
+                 <input type="text" name="src" id="src" value="<%= hotel.src %>" hidden>
+                 <input type="text"name="title"value="hotel" hidden>
               </div>
-              <button type="submit" class="btn btn-primary">Agregar</button>
+              <button type="submit" class="btn btn-primary">Modificar</button>
         </form>
     </div>
 </section>
